@@ -1,11 +1,8 @@
-<?php // callback.php
-
-require "vendor/autoload.php";
-require_once('vendor/linecorp/line-bot-sdk/line-bot-sdk-tiny/LINEBotTiny.php');
-
-$access_token = '/iX39HIq8ZAHZ2MvcI5ofunJAE+Ph4wilY2W7658JpTiQ227oivOXe8kkx4bkPr/G9y/EPGV8U/5X8lBHtmKXQcf45mkcvU8Iis+ejovwAr5GBCEr4N5keuRYAoZJMeYDbE6aYew+9Ue7VqbW0V28AdB04t89/1O/w1cDnyilFU=';
-
-$content = file_get_contents('php://input');
+<?php
+    $accessToken = "6F2tlSDmRInQLBjOlqrF0nllo+YuzvC6H0aRe6VMy9vcwUEcDSP52BQF5AhuqaGTG9y/EPGV8U/5X8lBHtmKXQcf45mkcvU8Iis+ejovwArhzrJ0TtFGTKBDd0mys6fHzfIGZVjHwMSQbC+CLb0n5QdB04t89/1O/w1cDnyilFU=
+";//copy Channel access token ตอนที่ตั้งค่ามาใส่
+    
+    $content = file_get_contents('php://input');
     $arrayJson = json_decode($content, true);
     
     $arrayHeader = array();
